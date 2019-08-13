@@ -1,0 +1,35 @@
+{
+  "name": "fitbit-comm-issues-sample",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fitbit/sdk": "~3.1.0",
+    "@fitbit/sdk-cli": "^1.6.0",
+    "fitbit-sdk-types": "^4.1.5"
+  },
+  "fitbit": {
+    "appUUID": "22fb720a-ebae-41e8-9d79-4c928d6b7c8b",
+    "appType": "clockface",
+    "appDisplayName": "fitbit-comm-issues-sample",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [
+      "run_background"
+    ],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  },
+  "dependencies": {
+    "fitbit-asap": "^1.2.3"
+  }
+}

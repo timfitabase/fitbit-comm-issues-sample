@@ -1,0 +1,5 @@
+<svg id="screen" viewport-fill="black">
+  <text id="date" text-length="24" />
+  <text id="timeShadow" class="time time-shadow" text-length="24"/>
+  <text id="time" class="time" text-length="24"/>
+</svg>

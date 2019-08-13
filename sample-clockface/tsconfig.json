@@ -1,0 +1,15 @@
+{
+    "extends": "./node_modules/@fitbit/sdk/sdk-tsconfig.json",
+    "compilerOptions": {
+        "strict": true,
+        "lib": [
+            "es7"
+        ]
+    },
+    "files": [
+        "fitbit-asap.d.ts"
+    ],
+    "exclude": [
+        "common/polyfills/*"
+    ]
+}
