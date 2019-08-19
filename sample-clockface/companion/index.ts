@@ -3,7 +3,7 @@ import messaging from "./peerMessaging";
 import { me } from "companion"
 
 const MILLISECONDS_PER_MINUTE = 1000 * 60;
-    me.wakeInterval = 50 * MILLISECONDS_PER_MINUTE;
+    me.wakeInterval = 5 * MILLISECONDS_PER_MINUTE;
 
     if (me.launchReasons.wokenUp) {
         // The companion started due to a periodic timer
