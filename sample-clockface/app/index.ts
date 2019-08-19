@@ -36,13 +36,13 @@ let init:void|null = (function() {
             }
         }
 
-        setInterval(function() {messaging.sendMessage("APP MESSAGE " + Date.now(), {timeout: 60000});}, 60000);
+        //setInterval(function() {messaging.sendMessage("APP MESSAGE " + Date.now(), {timeout: 60000});}, 60000);
 
-        setInterval(function() {console.log("JS memory: " + memory.js.used + "/" + memory.js.total);}, 10000);
+        //setInterval(function() {console.log("JS memory: " + memory.js.used + "/" + memory.js.total);}, 10000);
 
-        setInterval(function() {logFileTransfer.exportLogs();},30000);
+        //setInterval(function() {logFileTransfer.exportLogs();},30000);
 
-        setInterval(function() { fileTransfer.dumpQueue(); }, 45000);
+        //setInterval(function() { fileTransfer.dumpQueue(); }, 45000);
 } catch(ex) {
     console.log(ex);
 }
