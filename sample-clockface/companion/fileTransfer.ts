@@ -16,7 +16,6 @@ async function processReceivedFiles() {
 
 self.init = function() {
     inbox.onnewfile = processReceivedFiles;
-    processReceivedFiles();
 }
 
 export default self;

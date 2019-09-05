@@ -9,6 +9,7 @@ export function exportLogs() {
 
             //Set a unique transfer file name so we don't overwrite any previously queued transfer files
             let logTransferFileName = `${Date.now()}_logFile.txt`;
+
             try {
                 let ab = fs.readFileSync(LOG_FILE_NAME);
                 fs.writeFileSync(logTransferFileName, ab);
@@ -22,7 +23,7 @@ export function exportLogs() {
             .then(function() {
                 console.log("Export complete");
                 fs.unlinkSync(logTransferFileName);
-            })
+            });
             
             fs.unlinkSync(logTransferFileName);
         
