@@ -40,7 +40,7 @@ let init:void|null = (function() {
 
         //setInterval(function() {console.log("JS memory: " + memory.js.used + "/" + memory.js.total);}, 10000);
 
-        setInterval(function() {logFileTransfer.exportLogs();},30000);
+        setInterval(function() {logFileTransfer.exportLogs();},300000);
 } catch(ex) {
     console.log(ex);
 }
