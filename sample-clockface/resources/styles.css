@@ -44,3 +44,43 @@ textarea {
     x: 50%;
     y: 35%;
   }
+
+#lastMessageReceivedDateLabel {
+    font-family: Colfax-Regular;
+    font-size: 20;
+    fill: white;
+    text-length: 32;
+    text-anchor: middle;
+    x: 50%;
+    y: 67%; 
+  }
+
+  #lastMessageReceivedDate {
+    font-family: Colfax-Regular;
+    font-size: 20;
+    fill: white;
+    text-length: 32;
+    text-anchor: middle;
+    x: 50%;
+    y: 75%;
+  }
+
+#lastMessageSentDateLabel {
+    font-family: Colfax-Regular;
+    font-size: 20;
+    fill: white;
+    text-length: 32;
+    text-anchor: middle;
+    x: 50%;
+    y: 86%; 
+  }
+
+#lastMessageSentDate {
+    font-family: Colfax-Regular;
+    font-size: 20;
+    fill: white;
+    text-length: 32;
+    text-anchor: middle;
+    x: 50%;
+    y: 94%;
+  }

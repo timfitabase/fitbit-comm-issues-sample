@@ -2,4 +2,10 @@
   <text id="date" text-length="24" />
   <text id="timeShadow" class="time time-shadow" text-length="24"/>
   <text id="time" class="time" text-length="24"/>
+
+  <text id="lastMessageReceivedDateLabel" text-length="24">Last peer msg received:</text>
+  <text id="lastMessageReceivedDate" text-length="24">No msg received yet</text>
+
+  <text id="lastMessageSentDateLabel" text-length="24">Last peer msg sent:</text>
+  <text id="lastMessageSentDate" text-length="24">No msg sent yet</text>
 </svg>

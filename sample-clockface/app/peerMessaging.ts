@@ -1,6 +1,8 @@
+import document from "document";
 import * as messaging from "messaging";
 import asap from "fitbit-asap/app";
 import * as logging from './logging';
+import * as clockUtil from "../common/clockUtils";
 
 import * as fs from "fs";
 
@@ -43,6 +45,10 @@ let init:void|null = (function(){
 
             console.log("App received peer message: " + JSON.stringify(message));
 
+            let receivedDate = document.getElementById("lastMessageReceivedDate");
+            let d = new Date();
+            receivedDate!.text = `${clockUtil.getDateString(d)} ${clockUtil.getTimeString(d)}`;
+
         } catch (ex) {
             logging.logError(ex, "error in asap.onmessage()");
         }
@@ -56,6 +62,10 @@ let init:void|null = (function(){
                 } else {
                     asap.send(message);
                 }
+                let sentDate = document.getElementById("lastMessageSentDate");
+                let d = new Date();
+                sentDate!.text = `${clockUtil.getDateString(d)} ${clockUtil.getTimeString(d)}`;
+
                 if (shouldLog) {
                     logging.logEvent("SentPeerMessage");
                 } else {
