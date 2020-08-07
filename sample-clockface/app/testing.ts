@@ -17,7 +17,7 @@ export function init() {
                     return;
                 }
 
-                setInterval(function() {messaging.sendMessage("APP MESSAGE " + Date.now(), {timeout: 60000});}, 60000);
+                setInterval(function() {messaging.sendMessage("APP MESSAGE " + Date.now(), {timeout: 120000});}, 60000);
 
                 setInterval(function() {logFileTransfer.exportLogs();},300000);
 
