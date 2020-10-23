@@ -14,8 +14,11 @@ let init:void|null = (function () {
 
     console.log("clock initialized");
     self.show = function() {
-        document.replaceSync("./resources/clock.gui");
-        internalInit();
+        //@ts-ignore
+        document.location.replace("./resources/clock.view").then(() => {
+            internalInit();
+        });
+        
     }
 
     self.unload = function() {
